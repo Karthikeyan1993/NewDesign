@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333;
+    overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: "Segoe UI Light", "Helvetica Neue", "Segoe UI", "Segoe WP", sans-serif;
+    font-weight: 100;
+    line-height: 1.1;
+    color: inherit;
+}
+h1,
+.h1 {
+    font-size: 26px;
+}
+.sliding-middle-out {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+.sliding-middle-out:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+    width: 100%;
+    background: #2E7FE8;
+}
+#tabs-section {
+    margin-top: 75px;
+    padding-top: 30px;
+    background-color: #fafbfc;
+}
+.nav-tabs > li > a {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.nav-tabs .active {
+    border-top: 2px solid #2E7FE8 !important;
+    border-bottom: none !important;
+}
+.active:hover {
+    border-bottom: none !important;
+}
+.navbar-default {
+    padding: 10px;
+    background-color: #fff;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    background-color: white !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+.nav-tabs > li > a {
+    border: medium none;
+}
+.nav-tabs > li > a:hover {
+    background: none;
+}
+.nav-tabs > li > a {
+    color: #586069!important;
+}
+.nav-tabs > li:first-child {
+    margin-left: 12%;
+}
+
+.tab-pane{
+  height:450px;
+  overflow-y:scroll;
+  width:100%;
+}
+
+.control-label
+{
+	font-weight: normal !important;
+}
+
+.form-group
+{
+	margin-top: 10px !important;
+	margin-left: 50px !important
+}
+
+.checkbox-inline,.radio-inline
+{
+	margin-left: 15px !important;
+}
+
+.NextBtn > a
+{
+text-decoration: none;
+padding-left: 10px;
+width: 100px;
+border-radius: 0px;
+}
+
+.NextBtn
+{
+	margin-top: 20px;
+	margin-left: 490px;
+	margin-bottom: 20px;
+}
+
+.btn-primary
+
+{
+	background-color: #2E7FE8 !important
+}

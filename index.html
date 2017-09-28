@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="mainApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kurnia</title>
+    <link rel="stylesheet" href="bower_components\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body data-ng-controller="mainCtrl as vm">
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="../" class=""><img src="kurnia-logo-header.png" style="margin-top: 5px;" alt=""></a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="sliding-middle-out" href=>About Us</a>
+                    </li>
+                    <li>
+                        <a class="sliding-middle-out" href=>Claim Services</a>
+                    </li>
+                    <li>
+                        <a class="sliding-middle-out" href=>Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="UiTabs">
+            <div class="row">
+                <uib-tabset active="active">
+                    <uib-tab index="$index" ng-repeat="tab in vm.uiTabs" heading="{{tab.name}}">
+                        {{tab.content}}
+                    </uib-tab>
+            </div>
+        </div>
+    </div>
+
+    <!--Include Compiled and minified javascript files here-->
+    <script type="text/javascript" src="bower_components\jquery\dist\jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components\bootstrap\dist\js\bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components\angular\angular.min.js"></script>
+    <script type="text/javascript" src="bower_components\angular-bootstrap\ui-bootstrap-tpls.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
